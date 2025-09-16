@@ -20,7 +20,7 @@ export class AppController {
     @Query(
       'config',
       new ParseJsonPipe(),
-      new ValidationPipe({ transform: true, whitelist: true }),
+      new ValidationPipe({ transform: true }),
     )
     config: ExternalApiConfigDto,
   ): Promise<GetDataOutput> {
