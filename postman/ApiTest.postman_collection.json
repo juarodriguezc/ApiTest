@@ -1,0 +1,51 @@
+{
+	"info": {
+		"_postman_id": "cac71392-3988-4012-9a01-6dff4588b8e4",
+		"name": "ApiTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15291254"
+	},
+	"item": [
+		{
+			"name": "Get Data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/digimon/v1?metadata={\"id\":2}&config={\"baseUrl\":\"https://digi-api.com\", \"headers\":{\"Authorization\":\"Bearer badtoken\"}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"digimon",
+						"v1"
+					],
+					"query": [
+						{
+							"key": "metadata",
+							"value": "{\"name\":\"evee\"}",
+							"disabled": true
+						},
+						{
+							"key": "config",
+							"value": "{\"baseUrl\":\"https://pokeapi.co/api/v2\"}",
+							"disabled": true
+						},
+						{
+							"key": "metadata",
+							"value": "{\"id\":2}"
+						},
+						{
+							"key": "config",
+							"value": "{\"baseUrl\":\"https://digi-api.com\", \"headers\":{\"Authorization\":\"Bearer badtoken\"}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
